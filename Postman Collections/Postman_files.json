@@ -1,0 +1,114 @@
+{
+  "info": {
+    "_postman_id": "8702a525-f354-49bf-b339-9db75d9853ed",
+    "name": "Spotify",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST",
+      "_postman_id": "2ee2678c-4a6a-4405-bfcb-5cd9b85ec228",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "BQAmykc5K0AItcNmIv2juui1cuaZA61E21ajPCDmgkwwT8Ps6R3tmTHmJdnoi6sh6SSYHtVAJulLWlOFOCGEseqGjFq1d_PL-Tq3j1RXVr0TJdheAytI3-KkUqmvaNywIUpT36qlEKYA5cUQCL5CBUvMtfmwcEbb16paTxWa8c5ZfX0ndr6Un3qUNJCOBvuglOIeXGGo470JLPJOJ9vNjPwP9Me_okOqUF_EC4-6d4Hk9huYw2PwXd8RbXCUZgDQ2GDD24H0ZFmZtIgdTItqmQtl4xv8xALqgdYpDJ12"
+          }
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"GIO2121\",\r\n  \"description\": \"Electronic Music 2020\",\r\n  \"public\": false\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.spotify.com/v1/users/vwvqonkz2c06la0vx4s9jl22i/playlists",
+        "description": "Description : Create a Playlist \r\nEndpoint : https://api.spotify.com/v1/users/{user_id}/playlists\r\nHTTP Method : POST\r\nOauth : \tBearer Token\r\n"
+      },
+      "response": []
+    },
+    {
+      "name": "GET",
+      "_postman_id": "d757ee32-9ffd-410d-b341-d43daecfd2ff",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "BQC9i7AGDB9GKmivRdN_JxhZieDdyGxnvrF5mKItUwDMT-gaWCLDOFu2-wbizAKAVdHktQ-S09GhbJFoSYXMz5ECUUsLv9BKc9ObqpZk5sXLvuRmIHpSWoZQ_Xh22u2gYl9YfyshjAhYuAt7F8O_LBLvdZJqh7SWLBSp8F1y7zzTOba1LfsYelEaLs57H9nPWwzu4tyeoastXhUpG9HhGeb2h1Mz8ZBQgCJQaU4OmJPIR7u4n_Y4gYXuQlT2taMPUuUnw__Und-Y2oyqdZ4DgNtLPrz2bQ"
+          }
+        },
+        "method": "GET",
+        "header": [],
+        "url": "https://api.spotify.com/v1/users/vwvqonkz2c06la0vx4s9jl22i/playlists",
+        "description": "Description: Get a List of a User's Playlists\r\nEndpoint : https://api.spotify.com/v1/users/{user_id}/playlists\r\nHTTP Method : GET\r\nOauth : \tBearer Token\r\n"
+      },
+      "response": []
+    },
+    {
+      "name": "PUT",
+      "_postman_id": "3c42c973-f936-4405-a64d-b9ec78303c83",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "BQDEzbJmKg60mQikUZWyFiehoyVkhwPvGHdtNrCLismbwvnrlojw0Gi3XWg6mSEgnzJqX6n4IK5B5iQyW9q3aL-uP0leROHJl-_U8ClfkyHaprE4sIA3V26D1SqzO0JHhC-Vkl0OR6zUcZaVkzSE86vdDrBKEhPCuYELXg5yhTt6W4VQkLpeI6MMqOlEW6PBmgTHUkkjZJRUAVhpXU0CiH6M99BrS51orqI9_8Xyy3FD83dw5nmmf-Mzr4x2tem26ACewzuSkT0-ADBtAIra40-_Yi-xWg"
+          }
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"EDM2021\",\r\n  \"description\": \"Updated EDM2021\",\r\n  \"public\": false\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.spotify.com/v1/playlists/1uzQki72TePQ7N0koOENkU\n"
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE",
+      "_postman_id": "6612e5ce-3824-47f0-b14d-8eaacd962a10",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": {
+            "token": "BQDI5LTFZl8ZMO0ic8YyaDYrYi0tokPlkjhAHe6DHYWDjTEe3pSXoF-ZZtqmqSskjpTRsVwLD5mkiYGow5YHwDpAV4e3DbFCVXVJ15atZD6lZXm3PCsWIWEmgFjtBaLvjn23EYRfkfXKscKD5aIwcmNDGHONS-tLWtyKxtBWUrno7tu_PF7HahOrdrPKUz4F9dh0KUko-8pOKF0dWSe5PjaMaQ3s7u7JpmD0gVk12hKpF3bnFi03mKCmWzOdtoLl1AmdmKKomoLQp_g31kPWwdwKM_1zjQ"
+          }
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"tracks\": [\r\n    {\r\n      \"uri\": \"spotify:track:3ee8Jmje8o58CHK66QrVC2\",\r\n      \"positions\": [\r\n        0\r\n      ]\r\n    },\r\n    {\r\n      \"uri\": \"spotify:track:7BKLCZ1jbUBVqRi2FVlTVw\",\r\n      \"positions\": [\r\n        1\r\n      ]\r\n    }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "https://api.spotify.com/v1/playlists/1NwY2rlW6wfI52UM1lIMKf/tracks"
+      },
+      "response": []
+    }
+  ]
+}
